@@ -48,7 +48,7 @@
 |:---|:---|:---|
 |<img src="./img/logo-express.jpeg" alt="Logo-Express"/>|Express|80%|
 |<img src="./img/logo-laravel.png" alt="Logo-Laravel"/>|Laravel|80%|
-|<img src="./img/logo-vue.png" alt="Logo-Laravel"/>|Vue|5%|
+|<img src="./img/logo-vue.png" alt="Logo-vue"/>|Vue|5%|
 
 # Projetos
  - [Arch-Node](https://github.com/alvarengacarlos/arch-node)
