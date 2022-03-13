@@ -1,25 +1,23 @@
 <script setup>
-import { ref } from "vue";
-
-const images = ref([
-    { src: "src/assets/img/api.png", alt: "Api imagem", class: "carousel-item active" },
-    { src: "src/assets/img/dev.png", alt: "Desenvolvimento imagem" },
-    { src: "src/assets/img/elephant.png", alt: "Elefante imagem" },
-    { src: "src/assets/img/penguin.png", alt: "Pinguim imagem" },
-    { src: "src/assets/img/ux.png", alt: "Experiência do Usuário imagem" }
-]);
-
 </script>
 
 <template>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div
-                v-for="(image, index) in images"
-                v-bind:key="index"
-                v-bind:class="image.class ? image.class : 'carousel-item'"
-            >
-                <img v-bind:src="image.src" class="d-block w-100" v-bind:alt="image.alt" />
+            <div class="carousel-item active">
+                <img src="../assets/img/api.png" class="d-block w-100" alt="Api imagem"/>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/dev.png" class="d-block w-100" alt="Desenvolvimento imagem"/>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/elephant.png" class="d-block w-100" alt="Elefante imagem"/>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/penguin.png" class="d-block w-100" alt="Pinguim imagem"/>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/ux.png" class="d-block w-100" alt="Experiência do Usuário imagem"/>
             </div>
         </div>
     </div>
