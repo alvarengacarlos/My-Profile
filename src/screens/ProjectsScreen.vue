@@ -20,9 +20,8 @@ const projects = ref([
 <template>
     <div class="row" v-bind:id="idSection">        
         <BigTitle v-bind:class="titleStyle" text="Projetos" />
-        <div class="d-flex justify-content-around ps-2">
-            
-            <div v-for="project in projects" class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="d-flex justify-content-around ps-2">            
+            <div v-for="(project, index) in projects" v-bind:key="index" class="card text-white bg-dark mb-3" style="max-width: 18rem;">
                 <div class="card-header">{{ project.title }}</div>
                 <div class="card-body">                    
                     <p class="card-text">{{ project.description }}</p>

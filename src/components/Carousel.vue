@@ -15,7 +15,8 @@ const images = ref([
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div
-                v-for="image in images"
+                v-for="(image, index) in images"
+                v-bind:key="index"
                 v-bind:class="image.class ? image.class : 'carousel-item'"
             >
                 <img v-bind:src="image.src" class="d-block w-100" v-bind:alt="image.alt" />
